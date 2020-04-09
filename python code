@@ -1,0 +1,17 @@
+def check_block(mystring):
+    print("The Length of given string is: " + str(len(mystring)))
+    countupper = 0
+    countlower = 0
+    for x in range(len(mystring)):
+        if mystring[x].isupper():
+            print("Upper at "+str(x))
+            countupper+=1
+        elif mystring[x].islower():
+            print("Lower at "+str(x))
+            countlower+=1
+
+        else:
+            pass
+
+    print("Uppercase: "+str(countupper))
+    print("Lowercase: "+str(countlower))
